@@ -1,0 +1,39 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- <link rel="manifest" href="site.webmanifest"> -->
+  <link rel="apple-touch-icon" href="../icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/wrong_event.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+  <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"> </script>
+</head>
+<body style='margin : 0px; overflow: hidden;'>
+<script>
+
+</script>
+<p>Version 1.0.1</p>
+<!-- Modèle 3D : https://clara.io/view/00f89ca4-aed6-488e-b70a-b6f900fdab6b# -->
+<a-scene embedded  renderer='antialias: true; alpha: true; logarithmicDepthBuffer: true'
+         arjs='debugUIEnabled: false; sourceType: webcam; maxDetectionRate: 30; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+  <a-assets>
+    <a-asset-item id="house-obj" src="../3d/old-house_rotate.obj"></a-asset-item>
+    <a-asset-item id="house-mtl" src="../3d/old-house_rotate.mtl"></a-asset-item>
+  </a-assets>
+  <a-marker type='barcode' value='5'>
+    <a-entity obj-model="obj: #house-obj; mtl: #house-mtl" position='0 0.5 0' scale="0.3 0.3 0.3"></a-entity>
+  </a-marker>
+  <a-entity camera></a-entity>
+</a-scene>
+</body>
+</html>

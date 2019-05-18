@@ -1,0 +1,257 @@
+#containerEvent {
+  position: absolute;
+  text-align: center;
+  width: 90%;
+  height: 70%;
+  left: 5%;
+  top: 20%;
+}
+
+#personageImage {
+  width: 240px;
+  height: 160px;
+}
+
+.dialogueNameButton {
+  margin-top: 5%;
+
+  background-image : url("../img/dialogue_button_name.png");
+  background-size: cover;
+
+  content: "";
+  width: 200px;
+  height: 67px;
+  outline-width: 250px;
+  font-weight: bold;
+  font-style: italic;
+
+  text-align: center;
+
+  padding-top: 8px;
+
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.oneTextLine {
+  padding-top: 20px;
+}
+
+.dialogueButton {
+
+  background-image : url("../img/dialogue_button_forward.png");
+  background-size: cover;
+
+  content: "";
+  width: 300px;
+  height: 200px;
+  outline-width: 250px;
+  padding-top: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 0.95em;
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: justify;
+
+}
+
+#dialogueButtonReturn {
+  position: absolute;
+  display: none;
+  content: "";
+  width: 150px;
+  height: 50px;
+  outline-width: 250px;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  z-index: 2;
+
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: justify;
+}
+
+#audio {
+  display: none;
+}
+
+#containerQuestionEvent {
+  display: none;
+  position: absolute;
+  text-align: center;
+  width: 90%;
+  height: 45%;
+  left: 5%;
+  top: 50%;
+}
+
+.questionHeader {
+  background-image : url("../img/dialogue_button_name.png");
+  background-size: cover;
+
+  content: "";
+  width: 300px;
+  height: 100px;
+  outline-width: 250px;
+  font-weight: bold;
+  font-style: italic;
+
+  text-align: center;
+
+  padding-top: 10px;
+
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.response {
+  background-image : url("../img/dialogue_button_name.png");
+  background-size: cover;
+  margin-top: 3%;
+  content: "";
+  width: 150px;
+  height: 50px;
+  outline-width: 250px;
+  padding-top: 10px;
+
+  text-align: center;
+
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.preload {
+  display: none;
+}
+
+#preload_green_check {
+  background-image : url("../img/green_check.png");
+}
+
+#preload_red_cross {
+  background-image : url("../img/red_cross.png");
+}
+
+#preload_no_arrow {
+  background-image : url("../img/dialogue_button_no_arrow.png");
+}
+
+#helpButton {
+  background-image : url("../img/help_button.png");
+  background-size: cover;
+
+  content: "";
+  width: 75px;
+  height: 75px;
+
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#containerHelpButton {
+  position: absolute;
+  text-align: center;
+  right: 5%;
+  top: 5%;
+}
+
+#helpContainer {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 3; /* Sit on top */
+  padding-top: 40%; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+}
+
+/* wrongEvent Content */
+#help {
+  background-image : url("../img/indices.png");
+  background-size: cover;
+
+  width: 300px;
+  height: 450px;
+
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  margin: auto;
+  padding-top: 20px;
+}
+
+.helpTab {
+  background-size: cover;
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 50px;
+  width: 95px;
+  display: block;
+}
+
+.helpActive {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#helpContent {
+  margin-top: 50px;
+  padding: 20px;
+  padding-top: 120px;
+  width: 300px;
+  height: 350px;
+}
+
+#helpAlert {
+  position: fixed; /* Stay in place */
+  z-index: 4; /* Sit on top */
+  top: 40%;
+  display: none;
+  background-image : url("../img/help_alerte.png");
+  background-size: cover;
+
+  width: 250px;
+  height: 250px;
+
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  margin: auto;
+  margin-left: 25px;
+}
+
+#helpAlertDialogue {
+  text-align: justify;
+  width: 250px;
+  height: 170px;
+  padding: 25px;
+  margin: 0;
+}
+
+.helpAlertAction {
+  position: absolute;
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 125px;
+  height: 80px;
+  font-weight: bold;
+  padding-top: 30px;
+  text-align: center;
+}

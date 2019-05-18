@@ -1,0 +1,120 @@
+#containerGame {
+  position: absolute;
+  text-align: center;
+  width: 90%;
+  height: 70%;
+  left: 5%;
+  top:20%;
+  display: none;
+}
+
+#containerInsideGame {
+  position: absolute;
+  text-align: center;
+  width: 90%;
+  height: 40%;
+  left: 5%;
+  top: 35%;
+}
+
+.gameNameButton {
+  margin-top: 5%;
+
+  background-image : url("../img/dialogue_button_name.png");
+  background-size: cover;
+
+  content: "";
+  width: 200px;
+  height: 67px;
+  outline-width: 250px;
+  font-weight: bold;
+  font-style: italic;
+
+  text-align: center;
+
+  padding-top: 8px;
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#timeline {
+  background-image : url("../img/timeline.png");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  left: 100px;
+  content: "";
+  width: 125px;
+  height: 301px;
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.dropzone {
+  background-color: transparent;
+  border: solid 4px grey;
+  border-radius: 4px;
+  padding-top: 0px;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 100px;
+  height: 120px;
+
+  font-size: 0.6rem;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+
+#dropzone-grecque {
+  position: absolute;
+  top: 180px;
+  left: 217px;
+}
+
+#dropzone-romaine {
+  position: absolute;
+  top: 120px;
+  left: 0px;
+}
+
+#dropzone-medievale {
+  position: absolute;
+  top: 0px;
+  left: 216px;
+}
+
+.dropzone-active {
+  border-color: green;
+}
+
+.dropzone-wrong {
+  border-color: red;
+}
+
+.drag-drop {
+  -webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  -ms-touch-action: none;
+  touch-action: none;
+}
+
+#continueDialogue {
+  content: "";
+  width: 200px;
+  height: 67px;
+  outline-width: 250px;
+  font-weight: bold;
+  font-style: italic;
+
+  text-align: center;
+  background-size: cover;
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+}

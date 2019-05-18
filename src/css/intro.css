@@ -1,0 +1,132 @@
+#containerEvent {
+  position: absolute;
+  text-align: center;
+  width: 90%;
+  height: 70%;
+  left: 5%;
+  top: 20%;
+}
+
+#personageImage {
+  width: 240px;
+  height: 160px;
+}
+
+.dialogueNameButton {
+  margin-top: 5%;
+
+  background-image : url("../img/dialogue_button_name.png");
+  background-size: cover;
+
+  content: "";
+  width: 200px;
+  height: 67px;
+  outline-width: 250px;
+  font-weight: bold;
+  font-style: italic;
+
+  text-align: center;
+
+  padding-top: 8px;
+
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.dialogueNameButton {
+
+}
+
+.oneTextLine {
+  padding-top: 20px;
+}
+
+.dialogueButton {
+
+  background-image : url("../img/dialogue_button_forward.png");
+  background-size: cover;
+
+  content: "";
+  width: 300px;
+  height: 200px;
+  outline-width: 250px;
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: justify;
+}
+
+.eventAudio {
+  display: none;
+}
+
+#preload_no_arrow {
+  background-image : url("../img/dialogue_button_no_arrow.png");
+}
+
+
+#containerForm {
+  display: none;
+  position: absolute;
+  text-align: center;
+  width: 90%;
+  height: 80%;
+  left: 5%;
+  top: 10%;
+}
+
+.labelFrom {
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.dialogueNameButtonForm {
+  margin-top: 5%;
+
+  background-image : url("../img/dialogue_next_question.png");
+  background-size: cover;
+
+  content: "";
+  width: 200px;
+  height: 67px;
+  outline-width: 250px;
+  font-weight: bold;
+  font-style: italic;
+
+  text-align: center;
+
+  padding-top: 8px;
+
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.dialogueButtonForm {
+
+  background-image : url("../img/dialogue_button_no_arrow.png");
+  background-size: cover;
+
+  content: "";
+  width: 300px;
+  height: 200px;
+  outline-width: 250px;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: justify;
+}
+
+#audio {
+  display: none;
+}

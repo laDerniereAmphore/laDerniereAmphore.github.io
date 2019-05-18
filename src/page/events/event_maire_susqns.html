@@ -1,0 +1,57 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- <link rel="manifest" href="site.webmanifest"> -->
+  <link rel="apple-touch-icon" href="../../icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/event.css">
+</head>
+<body>
+<div id="header">
+  <div id="containerReturnButton">
+    <a class="btn returnButton" href="../game.html"></a>
+  </div>
+  <div id="containerCountdown">
+    <div id="countdown">
+      <div id='tiles'></div>
+    </div>
+  </div>
+</div>
+
+<div id="containerEvent">
+  <div id="personage">
+    <img src="../../img/maire.jpg" alt="maire" id="personageImage">
+  </div>
+  <div id="dialogue">
+    <a class="btn dialogueNameButton" id="dialogueNameButton"></a>
+    <a class="btn dialogueButton" id="dialogueButton"></a>
+  </div>
+</div>
+
+<script src="../../js/data.js"></script>
+<script src="../../js/event.js"></script>
+<script src="../../js/main.js"></script>
+<script src="../../js/elastic.js"></script>
+
+<script>
+  sessionStorage.setItem('maire_visited', 'true');
+  postElastic('maire');
+</script>
+
+<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
