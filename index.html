@@ -34,28 +34,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-<!--
-<script src="https://cdn.rawgit.com/jschr/textillate/master/assets/jquery.lettering.js"></script>
-<script src="https://cdn.rawgit.com/jschr/textillate/master/jquery.textillate.js"></script>
 
-
- <script>
-  function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-  }
-  $("#commencer").textillate({
-    in: { effect: ''},
-    out: { effect: 'rollOut', delay: 50, delayScale: 2, sync: true,
-      callback: async function () {
-        await sleep(500);
-        document.location.href = "src/page/intro.html";
-      }
-    },
-    autoStart: true,
-    loop: false,
-    type: 'char'
-  });
--->
 <script>
   document.getElementById('commencerButton').addEventListener('click',function(){
       document.location.href = "src/page/intro.html";
