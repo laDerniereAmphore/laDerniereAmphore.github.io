@@ -61,4 +61,38 @@ const event_question_data_json = `{
   }
 }`;
 
+const event_question_domaine_data_json = `{
+  "1": {
+    "question": "Quelle est la taille du domaine de Roche-Cattin ?",
+    "responses": {
+        "1": "1 hectare",
+        "2": "5 hectares",
+        "3": "15 hectares",
+        "4": "100 hectares"
+      },
+    "good_response": "3"
+  },
+  "2": {
+    "question": "Combien de cuvées produit le domaine de Roche-Cattin ?",
+    "responses": {
+        "1": "1",
+        "2": "3",
+        "3": "9",
+        "4": "40"
+      },
+    "good_response": "3"
+  },
+  "3": {
+    "question": "En quelle année a été créé le domaine de Roche Cattin  ?",
+    "responses": {
+        "1": "1955",
+        "2": "1970",
+        "3": "1990",
+        "4": "2010"
+      },
+    "good_response": "1"
+  }
+}`;
+
 let event_question_data_map = JSON.parse(event_question_data_json);
+let event_question_domaine_data_map = JSON.parse(event_question_domaine_data_json);

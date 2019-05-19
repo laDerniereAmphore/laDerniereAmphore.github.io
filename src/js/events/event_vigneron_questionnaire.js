@@ -1,13 +1,23 @@
 let currentQuestion;
 let currentQuestionNumber = 1;
-const maximumQuestionNumber = 3;
+const neededGoodResponses = 3;
+const maximumQuestionNumber = 5;
+const startingDomaineQuestionNumber = 4;
 const availableQuestionNumber = 6;
+const availableDomaineQuestionNumber = 3;
 let good_responses = 0;
 let availableQuestions = [];
+let availableDomaineQuestions = [];
 let questionText = "Question suivante";
 let waitingForResponse = true;
+
+const domaineDialogueText = "Et maintenant des questions sur le domaine de Roche-Cattin, qui vous accueille aujourd’hui.";
+
 for (let i = 1; i <= availableQuestionNumber; i++) {
   availableQuestions.push(i);
+}
+for (let i = 1; i <= availableDomaineQuestionNumber; i++) {
+  availableDomaineQuestions.push(i);
 }
 
 questionHeader = document.getElementById("questionHeader");
@@ -16,7 +26,11 @@ response2 = document.getElementById("response2");
 response3 = document.getElementById("response3");
 response4 = document.getElementById("response4");
 
+let currentAvailableQuestions = availableQuestions;
+let currentQuestionDataMap = event_question_data_map;
+
 function questionLauncher() {
+  // On passe aux questions sur le domaine
   waitingForResponse = true;
   // Supprime tous les élements de la classe mark de la question précédente
   let toRemove = document.getElementsByClassName('mark');
@@ -28,13 +42,18 @@ function questionLauncher() {
     if ( currentQuestionNumber === maximumQuestionNumber ) {
       questionText = "Fin du questionnaire"
     }
+
     document.getElementById("containerQuestionEvent").style.display = "block";
     document.getElementById("dialogue").style.display = "none";
-
+    if ( currentQuestionNumber === startingDomaineQuestionNumber) {
+      currentAvailableQuestions = availableDomaineQuestions;
+      currentQuestionDataMap = event_question_domaine_data_map;
+      createDomaineDialogue();
+    }
     // Choix de la question aléatoire, puis on l'enleve des questions encore disponibles
-    let randomlyChosenQuestion = Math.floor(Math.random() * availableQuestions.length);
-    currentQuestion = event_question_data_map[availableQuestions[randomlyChosenQuestion].toString()];
-    availableQuestions.splice(randomlyChosenQuestion, 1);
+    let randomlyChosenQuestion = Math.floor(Math.random() * currentAvailableQuestions.length);
+    currentQuestion = currentQuestionDataMap[currentAvailableQuestions[randomlyChosenQuestion].toString()];
+    currentAvailableQuestions.splice(randomlyChosenQuestion, 1);
 
     let question_text = "Question " + currentQuestionNumber.toString() + "/" + maximumQuestionNumber.toString() + " :\n";
 
@@ -59,7 +78,7 @@ function resultLauncher() {
   let dialogueButton = document.getElementById("dialogueButton");
   let personageImage = document.getElementById("personageImage");
   let vigneron_result_stored = parseInt(sessionStorage.getItem('vigneron_result'));
-  if ( vigneron_result_stored >= 2 ) {
+  if ( vigneron_result_stored >= neededGoodResponses ) {
     dialogueButton.innerHTML = event_map[personage]["well_done"];
     personageImage.src = "../../img/viticulteur_win.jpg";
   }
@@ -135,5 +154,24 @@ function nextQuestionMark() {
 
   nextQuestion.addEventListener('click',function(){
     questionLauncher();
+  });
+}
+
+function createDomaineDialogue() {
+
+  let boundingClientRect = document.getElementById("questionHeader").getBoundingClientRect();
+  let domaineDialogue = document.createElement("a");
+  document.body.appendChild(domaineDialogue);
+  domaineDialogue.className += " dialogueButton";
+  domaineDialogue.style.position = "absolute";
+  domaineDialogue.style.top = boundingClientRect.top.toString() + "px";
+  domaineDialogue.style.left = boundingClientRect.left.toString() + "px";
+  domaineDialogue.style.zIndex="3";
+  domaineDialogue.innerHTML = domaineDialogueText;
+  domaineDialogue.style.display = "block";
+  document.getElementById("containerQuestionEvent").style.display = "none";
+  domaineDialogue.addEventListener('click',function(){
+    document.getElementById("containerQuestionEvent").style.display = "block";
+    domaineDialogue.style.display = "none";
   });
 }
