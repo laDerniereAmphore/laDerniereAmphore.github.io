@@ -139,7 +139,7 @@ require([
 
   // Add the graphics to the view's graphics layer
   view.graphics.addMany(listLocation);
-  /*
+
   let locateBtn = new Locate({
     view: view
   });
@@ -148,14 +148,14 @@ require([
   view.ui.add(locateBtn, {
     position: "top-left"
   });
-  */
+  /*
   let trackWidget = new Track({
     view: view
   });
 
   view.ui.add(trackWidget, "top-left");
   // trackWidget.start();
-
+  */
   let searchWidget = new Search({
     view: view,
     sources: [{
