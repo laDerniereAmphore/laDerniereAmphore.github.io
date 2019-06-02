@@ -20,6 +20,12 @@ PUT https://search-elastic-amphore-3ffd2anu3kwaco6m4gqfny3t2y.eu-west-3.es.amazo
     },
     "team_number": {
       "type": "short"
+    },
+    "final_time_minutes": {
+      "type": "short"
+    },
+    "final_time_seconds": {
+      "type": "short"
     }
   }
 }

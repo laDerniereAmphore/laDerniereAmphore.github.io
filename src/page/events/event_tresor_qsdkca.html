@@ -37,14 +37,19 @@
   </div>
 </div>
 
+<script>
+  sessionStorage.setItem('tresor_visited', 'true');
+</script>
+
 <script src="../../js/data.js"></script>
 <script src="../../js/event.js"></script>
 <script src="../../js/main.js"></script>
 <script src="../../js/elastic.js"></script>
 
 <script>
-  sessionStorage.setItem('tresor_visited', 'true');
   postElastic('tresor');
+  timeList = getFinalCountdown();
+  postElasticFinalTime(timeList[0], timeList[1]);
 </script>
 
 <script src="https://www.google-analytics.com/analytics.js" async defer></script>

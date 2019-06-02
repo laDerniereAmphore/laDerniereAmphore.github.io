@@ -19,7 +19,8 @@ let countdown = document.getElementById("tiles"); // get tag element
 
 let intervalCountdown = setInterval(function () { getCountdown(); }, 1000);
 
-if ( sessionStorage.getItem('tresor_visited') === 'true') {
+if ( ( sessionStorage.getItem('minutes') !== null && sessionStorage.getItem('seconds') !== null )
+  || sessionStorage.getItem('tresor_visited') === 'true') {
   window.clearInterval(intervalCountdown);
   getFinalCountdown();
 }
@@ -59,28 +60,40 @@ function getCountdown(){
 }
 
 function getFinalCountdown(){
-  target_date_stored = sessionStorage.getItem('target_date');
-  targetDate = new Date(0);
-  targetDate.setUTCMilliseconds(parseInt(target_date_stored));
-  targetDate = targetDate.getTime();
-  // find the amount of "seconds" between now and target
-  let currentDate = new Date().getTime();
-
+  let minutesStored = sessionStorage.getItem('minutes');
+  let secondsStored = sessionStorage.getItem('seconds');
+  let minutes = 0;
+  let seconds = 0;
   let countdownColor = "";
-  // On vérifie si on est dans les temps ou pas
-  if ( targetDate >= currentDate ) {
-    let secondsSpend = (gameDuration - (targetDate - currentDate)) / 1000;
-    minutes = pad(parseInt(secondsSpend / 60));
-    seconds = pad(parseInt(secondsSpend % 60));
+  if (minutesStored !== null && secondsStored !== null) {
+    minutes = parseInt(minutesStored);
+    seconds = parseInt(secondsStored);
   }
   else {
-    let secondsSpend = (gameDuration + (currentDate - targetDate)) / 1000;
-    minutes = pad(parseInt(secondsSpend / 60));
-    seconds = pad(parseInt(secondsSpend % 60));
+    target_date_stored = sessionStorage.getItem('target_date');
+    targetDate = new Date(0);
+    targetDate.setUTCMilliseconds(parseInt(target_date_stored));
+    targetDate = targetDate.getTime();
+    // find the amount of "seconds" between now and target
+    let currentDate = new Date().getTime();
+
+    // On vérifie si on est dans les temps ou pas
+    if (targetDate >= currentDate) {
+      let secondsSpend = (gameDuration - (targetDate - currentDate)) / 1000;
+      minutes = pad(parseInt(secondsSpend / 60));
+      seconds = pad(parseInt(secondsSpend % 60));
+    } else {
+      let secondsSpend = (gameDuration + (currentDate - targetDate)) / 1000;
+      minutes = pad(parseInt(secondsSpend / 60));
+      seconds = pad(parseInt(secondsSpend % 60));
+    }
+    sessionStorage.setItem('minutes', minutes);
+    sessionStorage.setItem('seconds', seconds);
   }
 
   // format countdown string + set tag value
   countdown.innerHTML = "<span" + countdownColor + ">" + minutes + "</span><span" + countdownColor + ">" + seconds + "</span>";
+  return [minutes, seconds];
 }
 
 function pad(n) {
