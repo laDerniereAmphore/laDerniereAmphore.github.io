@@ -10,8 +10,8 @@ const map_json = `[
     "name": "Assistant",
     "tag": "assistant",
     "type": "personnage",
-    "latitude": 45.849458,
-    "longitude": 4.578905
+    "latitude": 45.849408,
+    "longitude": 4.578907
   },
   {
     "name": "Pilleur",
@@ -31,8 +31,8 @@ const map_json = `[
     "name": "Vigneron",
     "tag": "others",
     "type": "personnage",
-    "latitude": 45.847430,
-    "longitude": 4.575666
+    "latitude": 45.847383,
+    "longitude": 4.575783
   },
   {
     "name": "Cantonnier",
