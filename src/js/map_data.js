@@ -45,8 +45,8 @@ const map_json = `[
     "name": "Historienne",
     "tag": "others",
     "type": "personnage",
-    "latitude": 45.848608, 
-    "longitude": 4.575649
+    "latitude": 45.848216, 
+    "longitude": 4.575379
   },
   {
     "name": "Mare",
@@ -80,15 +80,15 @@ const map_json = `[
     "name": "Colonne",
     "tag": "others",
     "type": "lieu",
-    "latitude": 45.846488, 
-    "longitude": 4.577210
+    "latitude": 45.846470, 
+    "longitude": 4.577205
   },
   {
     "name": "Enigme",
     "tag": "pilleur",
     "type": "lieu",
-    "latitude": 45.846141, 
-    "longitude": 4.575928
+    "latitude": 45.845790, 
+    "longitude": 4.575595
   }
 ]`;
 
