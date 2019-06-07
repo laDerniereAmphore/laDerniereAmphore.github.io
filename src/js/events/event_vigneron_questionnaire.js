@@ -171,10 +171,13 @@ function createDomaineDialogue() {
   domaineDialogue.style.zIndex="3";
   domaineDialogue.innerHTML = domaineDialogueText;
   domaineDialogue.style.display = "block";
+  playAudioVigneron('domaine');
   document.getElementById("containerQuestionEvent").style.display = "none";
   domaineDialogue.addEventListener('click',function(){
     document.getElementById("containerQuestionEvent").style.display = "block";
     domaineDialogue.style.display = "none";
+    let audio = document.getElementById("audio");
+    audio.pause();
   });
 }
 
