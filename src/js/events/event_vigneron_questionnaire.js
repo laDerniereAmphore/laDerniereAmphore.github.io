@@ -81,10 +81,12 @@ function resultLauncher() {
   if ( vigneron_result_stored >= neededGoodResponses ) {
     dialogueButton.innerHTML = event_map[personage]["well_done"];
     personageImage.src = "../../img/viticulteur_win.jpg";
+    playAudioVigneron("well_done");
   }
   else {
     dialogueButton.innerHTML = event_map[personage]["too_bad"];
     personageImage.src = "../../img/viticulteur_lose.jpg";
+    playAudioVigneron("too_bad");
   }
 }
 
@@ -174,4 +176,18 @@ function createDomaineDialogue() {
     document.getElementById("containerQuestionEvent").style.display = "block";
     domaineDialogue.style.display = "none";
   });
+}
+
+function playAudioVigneron(audioName) {
+  if (!document.contains(document.getElementById("audio"))) {
+    let audio      = document.createElement('audio');
+    audio.id       = 'audio';
+    audio.controls = 'controls';
+    audio.type     = 'audio/wav';
+    document.body.appendChild(audio);
+  }
+  let audio = document.getElementById("audio");
+  audio.pause();
+  audio.src = '../../audio/' + nickname + '/' + nickname + '_' + audioName + '.wav';
+  audio.play();
 }
