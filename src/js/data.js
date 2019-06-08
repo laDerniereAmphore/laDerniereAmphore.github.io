@@ -34,7 +34,7 @@
         "Vous les chasseurs de trésor, vous êtes un peu comme nous les historiens ! <br>Vous c’est l’aventure et nous c’est le savoir. Ensemble, nous sommes à la recherche de l’objet qui va bousculer la connaissance humaine.",
         "Nous avons un destin croisé depuis la nuit des temps comme dans la quête du graal, du trésor des templiers et plus récemment les crânes de cristal.",
         "Je vous conseille cependant de vous méfier des apparences, <b>les colonnes ont été utilisées durant plusieurs périodes historiques</b>. <br>Seul un oeil expert arrive à les <b>classer dans l’ordre chronologique</b>.",
-        "D’ailleurs seriez-vous capable de relier ces colonnes avec leur période historique correspondante ? <br>Je suis sur que vous y trouverez <b>une information qui vous aidera</b> pour la suite de votre aventure !",
+        "D’ailleurs seriez-vous capable de relier ces colonnes avec leur période historique correspondante ? <br>Je suis sûre que vous y trouverez <b>une information qui vous aidera</b> pour la suite de votre aventure !",
         "",
         "<i>Pendant ce temps, elle a repris ses élucubrations et semble vous avoir déjà oublié.</i>"
       ],

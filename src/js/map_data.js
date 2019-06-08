@@ -84,7 +84,7 @@ const map_json = `[
     "longitude": 4.577205
   },
   {
-    "name": "Enigme",
+    "name": "Tablette",
     "tag": "pilleur",
     "type": "lieu",
     "latitude": 45.845790, 
