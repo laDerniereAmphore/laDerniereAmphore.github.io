@@ -45,6 +45,7 @@ function questionLauncher() {
 
     document.getElementById("containerQuestionEvent").style.display = "block";
     document.getElementById("dialogue").style.display = "none";
+    document.getElementById("dialogueButtonReturn").style.display = "none";
     if ( currentQuestionNumber === startingDomaineQuestionNumber) {
       currentAvailableQuestions = availableDomaineQuestions;
       currentQuestionDataMap = event_question_domaine_data_map;
@@ -67,6 +68,7 @@ function questionLauncher() {
   else {
     document.getElementById("containerQuestionEvent").style.display = "none";
     document.getElementById("dialogue").style.display = "block";
+    document.getElementById("dialogueButtonReturn").style.display = "block";
 
     sessionStorage.setItem('vigneron_done', 'true');
     sessionStorage.setItem('vigneron_result', good_responses.toString());
