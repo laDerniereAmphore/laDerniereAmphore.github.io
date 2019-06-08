@@ -242,7 +242,14 @@
       ]
   },
   
-  
+  "6655": {
+    "nickname": "tous_indices",
+    "name": "Vous avez tous les indices",
+    "url": "events/event_tous_les_indices.html",
+    "dialogue": [
+        "<i>Bravo, vous avez trouvé tous les indices !<br> Vous devriez maintenant être en mesure de trouver le trésor.</i>"
+      ]
+  },
   "27": {
     "name": "Rien à voir ici",
     "nickname": "Rien_a_voir",

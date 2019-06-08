@@ -60,6 +60,18 @@
 
 <script>
   postElastic('game');
+  if ( sessionStorage.getItem('vigneron_visited') === 'true' && sessionStorage.getItem('voisine_visited') === 'true'
+    && sessionStorage.getItem('tablette_visited') === 'true' && sessionStorage.getItem('pelle_visited') === 'true'
+    && sessionStorage.getItem('noyer_visited') === 'true' && sessionStorage.getItem('menhir_visited') === 'true'
+    && sessionStorage.getItem('pilleur_visited') === 'true' && sessionStorage.getItem('mare_visited') === 'true'
+    && sessionStorage.getItem('historienne_visited') === 'true' && sessionStorage.getItem('colonne_visited') === 'true'
+    && sessionStorage.getItem('cantonnier_visited') === 'true' && sessionStorage.getItem('borne_visited') === 'true'
+    && sessionStorage.getItem('assistant_visited') === 'true') {
+    if (sessionStorage.getItem('tous_indices_visited') !== 'true') {
+      sessionStorage.setItem('current_personage', '6655');
+      location.href = event_map['6655']["url"];
+    }
+  }
 </script>
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 <script>
