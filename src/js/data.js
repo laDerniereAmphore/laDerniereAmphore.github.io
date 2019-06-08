@@ -1,4 +1,4 @@
-const event_json = `{
+ const event_json = `{
   "intro_qsdokx": {
     "name": "Professeur Martin, Archéologue",
     "nickname": "Professeur",
@@ -98,7 +98,7 @@ const event_json = `{
         "Sauf que le quartier, je le connais comme ma poche, moi. Vous voyez la maison derrière ? C’est là que j’y suis née. <br>Tout change si vite maintenant. ",
         "Les seules choses qui ont traversé le temps sont <b>le noyer, le menhir et la colonne</b>. <br>Je ne sais pas si ça peut vous aider, mais au moins, c’est dit.",
         "Allez sur ce, bonne journée. <br>Je dois aller nourrir la télé et regarder minouche, ou l’inverse.",
-        "<i>La voisine se retourne et se dirige vers sa maison. Arrivée sur le pas de la porte, elle se retourne une dernière fois et vous fait un clin d’oeil. <br>Le temps vous réagissiez, elle a déjà claqué la porte à en faire trembler les murs.</i>"
+        "<i>La voisine se retourne et se dirige vers sa maison. Arrivée sur le pas de la porte, elle se retourne une dernière fois et vous fait un clin d’oeil. <br>Le temps que vous réagissiez, elle a déjà claqué la porte à en faire trembler les murs.</i>"
       ]
   },
   "9487": {
@@ -133,7 +133,7 @@ const event_json = `{
     "dialogue": [
         "<i>Un homme imposant avec un haut jaune fluo et une salopette bleue vous tourne le dos. <br>En vous approchant, vous marchez sur une branche qui craque et l’homme se retourne brusquement.</i>",
         "Oh ! Vous m’avez fait drôlement peur vous autres ! <br>J’ai cru que c’était le chef. Faut dire qu’il est pas commode le chef. <br>Mais dites moi, vous ne seriez pas en train de rechercher le trésor ?",
-        "Moi je chercherai bien, mais j’ai trop de boulot à m’occuper de l'entretien de la commune.<br>Pour vous aider, je veux bien vous donner un outil, mais j’ai peur de me faire enguirlander par mon chef.",
+        "Moi je chercherai bien, mais j’ai trop de boulot à m’occuper dans l'entretien de la commune.<br>Pour vous aider, je veux bien vous donner un outil, mais j’ai peur de me faire enguirlander par mon chef.",
         "Ce qu’on va faire c’est que je vais partir devant. On se retrouve dans ma cabane, dans <b>un lieu</b> dont le code est donné par le mot <br><b><span style='color: red;'>R</span> <span style='color: orange;'>O</span> <span style='color: limegreen;'>S</span> <span style='color: dodgerblue;'>E</span></b>.",
         "<b><span style='color: red;'>R</span> <span style='color: orange;'>O</span> <span style='color: limegreen;'>S</span> <span style='color: dodgerblue;'>E</span></b>"
       ],
