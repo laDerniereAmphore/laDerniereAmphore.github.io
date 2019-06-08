@@ -74,7 +74,7 @@ function next_dialogue(reverse=false) {
       let personageImage = document.getElementById("personageImage");
       personageImage.src = "../../img/message.png";
       personageImage.addEventListener('click',function(){
-        copyToClipboard("45.846141,4.575928");
+        copyToClipboard("45.845790,4.575595");
       });
     }
   }
