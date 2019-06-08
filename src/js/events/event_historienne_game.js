@@ -12,6 +12,7 @@ function gameLauncher() {
   if ( currentQuestionNumber <= maximumQuestionNumber ) {
     document.getElementById("containerGame").style.display = "block";
     document.getElementById("containerEvent").style.display = "none";
+    document.getElementById("dialogueButtonReturn").style.display = "none";
     currentColonne = game_data_map[currentQuestionNumber.toString()];
     currentQuestionNumber++;
     createColonne(currentColonne)
@@ -28,6 +29,7 @@ function gameLauncher() {
 function solutionColonne(game_data_map, from_indices=false) {
   document.getElementById("containerGame").style.display = "block";
   document.getElementById("containerEvent").style.display = "none";
+  document.getElementById("dialogueButtonReturn").style.display = "none";
   Object.keys(game_data_map).forEach(function(key) {
     const currentColonne = game_data_map[key];
     const objectColonne = createColonne(currentColonne, true);
@@ -50,6 +52,7 @@ function returnDialogue() {
   continueDialogue.parentNode.removeChild(continueDialogue);
   document.getElementById('containerGame').style.display = 'none';
   document.getElementById("containerEvent").style.display = "";
+  document.getElementById("dialogueButtonReturn").style.display = "block";
   removeColonnes();
   next_dialogue();
 }
