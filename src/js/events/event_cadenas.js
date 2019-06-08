@@ -2,6 +2,7 @@ const tresorID = '256';
 
 function createCadenas() {
   document.getElementById("dialogueButton").style.display = "none";
+  document.getElementById("dialogueButtonReturn").style.display = "none";
   document.getElementById("lock-plate").style.display = "block";
 }
 
