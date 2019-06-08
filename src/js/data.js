@@ -50,7 +50,7 @@
     "url": "events/event_assistant_qsdkaz.html",
     "dialogue": [
         "<i>Vous arrivez près d’un jeune homme affairé, tenant une pierre dans sa main. <br>Il est entouré de dessins et de schémas. <br>Il vous entend arriver et se retourne.</i>",
-        "Bonjour, vous êtes les fameux chasseurs de trésors ! <br>Le Professeur Martin m’avait prévenu de votre visite.",
+        "Bonjour, vous êtes les fameux chasseurs de trésors ! <br>Le Professeur Martin m’avait prévenu de votre venue.",
         "Il s'excuse encore de son absence. Je vais me charger de vous expliquer la situation. ",
         "Nous avons trouvé <b>sur ces lieux</b>, l’emplacement d’une <i>Villa Rustica</i> à l’endroit où nous sommes. <br>Mais tout d’abord, revoyons les bases.",
         "En -52 avant Jésus Christ, la Gaule a été conquise par les Romains, dirigés par un certain Jules César. <br>Je pense que vous en avez déjà entendu parler.",
