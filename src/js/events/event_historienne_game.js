@@ -103,8 +103,9 @@ function continueDialogueButton() {
   continueDialogue.style.left = boundingClientRect.left + "px";
   continueDialogue.style.paddingTop = "5px";
   continueDialogue.style.zIndex="2";
+  continueDialogue.style.fontSize="0.8em";
   continueDialogue.style.display = "block";
-  continueDialogue.innerText = "Suite du dialogue";
+  continueDialogue.innerText = "Bravo, suite du dialogue";
 
   continueDialogue.addEventListener('click',function(){
     returnDialogue();
