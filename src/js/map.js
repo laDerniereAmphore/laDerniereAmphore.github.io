@@ -178,7 +178,9 @@ require([
   searchWidget.goToOverride = function(view, goToParams) {
     //x : 509554.61639355734, y : 5756029.5958736045
     if (Math.round(view.center.x / 10000) === 51 && Math.round(view.center.y / 100000) === 58) {
-      sessionStorage.setItem('enigme_found', 'true');
+      if ( sessionStorage.getItem('pilleur_visited') === 'true' ) {
+        sessionStorage.setItem('enigme_found', 'true');
+      }
       return view.goTo(goToParams.target, goToParams.options);
     }
   };
